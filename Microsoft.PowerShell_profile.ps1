@@ -1,8 +1,7 @@
 Write-Output "Loading profile..."
 
-Import-Module PSReadLine -Force
 Import-Module posh-git
-Import-Module PSRun
+Import-Module PowerShellRun
 Import-Module oh-my-posh
 
 $env:POSH_GIT_ENABLED=$true
@@ -81,4 +80,4 @@ Set-Alias -Name su -Value admin
 # Use fzf to preview and open file with default application
 function fzp {
   Invoke-Item (fzf --preview 'type {}')
-}
+}#
