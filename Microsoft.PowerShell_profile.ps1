@@ -2,7 +2,6 @@ Write-Output "Loading profile..."
 
 Import-Module posh-git
 Import-Module PowerShellRun
-Import-Module oh-my-posh
 
 $env:POSH_GIT_ENABLED=$true
 
